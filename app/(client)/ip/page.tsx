@@ -48,31 +48,52 @@ export default function Ip() {
 
         {/* PDF Files */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <Link href="/EP3153246B1.pdf">
-            <div className="block border border-gray-300 rounded-lg p-4 text-center cursor-pointer">
-              <FaFilePdf className="text-3xl mb-2 text-red-600" />
-              <span className="block text-sm font-semibold">Document 1</span>
-            </div>
-          </Link>
-          <Link href="/EP3153246B1.pdf">
-            <div className="block border border-gray-300 rounded-lg p-4 text-center cursor-pointer">
-              <FaFilePdf className="text-3xl mb-2 text-red-600" />
-              <span className="block text-sm font-semibold">Document 2</span>
-            </div>
-          </Link>
-          <Link href="/EP3153246B1.pdf">
-            <div className="block border border-gray-300 rounded-lg p-4 text-center cursor-pointer">
-              <FaFilePdf className="text-3xl mb-2 text-red-600" />
-              <span className="block text-sm font-semibold">Document 3</span>
-            </div>
-          </Link>
-          <Link href="/EP3153246B1.pdf">
-            <div className="block border border-gray-300 rounded-lg p-4 text-center cursor-pointer">
-              <FaFilePdf className="text-3xl mb-2 text-red-600" />
-              <span className="block text-sm font-semibold">Document 4</span>
-            </div>
-          </Link>
-        </div>
+  <Link href="https://patents.google.com/patent/US20140126965A1/en?assignee=Envit&oq=Envit">
+    <div className="block border border-gray-300 rounded-lg p-4 text-center cursor-pointer">
+      <img
+        src="11.jpg"
+        alt="Document 1 Thumbnail"
+        className="w-full h-32 object-cover mb-2 rounded"
+      />
+      <FaFilePdf className="text-3xl mb-2 text-red-600" />
+      <span className="block text-sm font-semibold">Document 1</span>
+    </div>
+  </Link>
+  <Link href="https://patents.google.com/patent/EP3153246B1/en?assignee=Envit&oq=Envit">
+    <div className="block border border-gray-300 rounded-lg p-4 text-center cursor-pointer">
+      <img
+        src="22.jpg"
+        alt="Document 2 Thumbnail"
+        className="w-full h-32 object-cover mb-2 rounded"
+      />
+      <FaFilePdf className="text-3xl mb-2 text-red-600" />
+      <span className="block text-sm font-semibold">Document 2</span>
+    </div>
+  </Link>
+  <Link href="https://patents.google.com/patent/GB201720126D0/en?assignee=Envit&oq=Envit">
+    <div className="block border border-gray-300 rounded-lg p-4 text-center cursor-pointer">
+      <img
+        src="33.jpg"
+        alt="Document 3 Thumbnail"
+        className="w-full h-32 object-cover mb-2 rounded"
+      />
+      <FaFilePdf className="text-3xl mb-2 text-red-600" />
+      <span className="block text-sm font-semibold">Document 3</span>
+    </div>
+  </Link>
+  <Link href="https://patents.google.com/patent/WO2022184903A1/en?oq=WO2022184903A1">
+    <div className="block border border-gray-300 rounded-lg p-4 text-center cursor-pointer">
+      <img
+        src="44.jpg"
+        alt="Document 4 Thumbnail"
+        className="w-full h-32 object-cover mb-2 rounded"
+      />
+      <FaFilePdf className="text-3xl mb-2 text-red-600" />
+      <span className="block text-sm font-semibold">Document 4</span>
+    </div>
+  </Link>
+</div>
+
       </div>
     </div>
   );

@@ -23,6 +23,8 @@ export default function Aboutus() {
       {/* Team Section */}
       <div className="mb-12">
         <h2 className="text-2xl font-bold mb-6">Our Team</h2>
+        <p>The core team of six, five of whom have PhDs, has experience in marketing, science and engineering</p>
+        <br />
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {/* Team Member 1 */}
           <div className="text-center">
@@ -70,63 +72,76 @@ export default function Aboutus() {
           </div>
         </div>
       </div>
+{/* Location and Contact Form Section */}
+<div className="md:flex md:justify-between md:space-x-12">
+  {/* Location Section */}
+  <div className="mb-12 md:w-1/2">
+    <h2 className="text-2xl font-bold mb-6">Location</h2>
+    <p className="text-lg">
+      Pod lipami 35<br />
+      1218 Komenda<br />
+      Slovenia
+    </p>
+    <p className="text-lg mt-4">
+      M: <a href="mailto:info@envit.si" className="text-blue-500 hover:underline">info@envit.si</a>
+    </p>
+    <p className="text-lg mt-4">Envit Ltd. offices</p>
 
-      {/* Location and Contact Form Section */}
-      <div className="md:flex md:justify-between md:space-x-12">
-        {/* Location Section */}
-        <div className="mb-12 md:w-1/2">
-          <h2 className="text-2xl font-bold mb-6">Location</h2>
-          <p className="text-lg">
-            Pod lipami 35<br />
-            1218 Komenda<br />
-            Slovenia
-          </p>
-          <p className="text-lg mt-4">
-            M: <a href="mailto:info@envit.si" className="text-blue-500 hover:underline">info@envit.si</a>
-          </p>
-          <p className="text-lg mt-4">Envit Ltd. offices</p>
-        </div>
+    {/* Google Maps Embed */}
+    <div className="mt-6">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.9552998282916!2d14.517246176316464!3d46.19144818462274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477acabe4f73c03d%3A0x65fb7fddff51771e!2sPod%20Lipami%2C%201218%20%C5%BDeje%20pri%20Komendi%2C%20Slovenia!5e0!3m2!1sen!2shu!4v1725629113288!5m2!1sen!2shu"        width="100%"
+        height="300"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        className="rounded-lg"
+      ></iframe>
+    </div>
+  </div>
 
-        {/* Contact Form Section */}
-        <div className="md:w-1/2">
-          <h2 className="text-2xl font-bold mb-6">Contact Us</h2>
-          <form>
-            <div className="mb-4">
-              <label className="block text-lg font-semibold mb-2" htmlFor="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                className="w-full border border-gray-300 rounded-lg p-2"
-                required
-              />
-            </div>
-            <div className="mb-4">
-              <label className="block text-lg font-semibold mb-2" htmlFor="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                className="w-full border border-gray-300 rounded-lg p-2"
-                required
-              />
-            </div>
-            <div className="mb-4">
-              <label className="block text-lg font-semibold mb-2" htmlFor="question">Question</label>
-              <textarea
-                id="question"
-                className="w-full border border-gray-300 rounded-lg p-2"
-                rows="4"
-                required
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              className="bg-blue-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-600"
-            >
-              Submit
-            </button>
-          </form>
-        </div>
+  {/* Contact Form Section */}
+  <div className="md:w-1/2">
+    <h2 className="text-2xl font-bold mb-6">Contact Us</h2>
+    <form>
+      <div className="mb-4">
+        <label className="block text-lg font-semibold mb-2" htmlFor="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          className="w-full border border-gray-300 rounded-lg p-2"
+          required
+        />
       </div>
+      <div className="mb-4">
+        <label className="block text-lg font-semibold mb-2" htmlFor="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          className="w-full border border-gray-300 rounded-lg p-2"
+          required
+        />
+      </div>
+      <div className="mb-4">
+        <label className="block text-lg font-semibold mb-2" htmlFor="question">Question</label>
+        <textarea
+          id="question"
+          className="w-full border border-gray-300 rounded-lg p-2"
+          rows="4"
+          required
+        ></textarea>
+      </div>
+      <button
+        type="submit"
+        className="bg-blue-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-600"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+
     </div>
   );
 }
